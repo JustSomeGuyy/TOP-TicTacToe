@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tic Tac Toe Game</title>
+</head>
+<body>
+    
+    <div class="header">
+        <h1 class="logo">Tic Tac Toe</h1>
+    </div>
+
+    <div class="gameDisplay">
+        <button id="newPlayer">Add Player</button>
+        <div class="playerNames"><span id="playerOne"></span></div>
+        <div class="score" id="scoreDisplay"> 0 - 0 </div>
+        <div class="playerNames"><span id="playerTwo"></span></div>
+    </div>
+    
+    <div class="buttons">
+        <button id="playerOneMove">Player One</button>
+        <button id="playerTwoMove">Player Two</button>
+    </div>
+
+    <div class="game" id="gameBoard">
+        <div class="spaces" id="1"></div>
+        <div class="spaces" id="2"></div>
+        <div class="spaces" id="3"></div>
+        <div class="spaces" id="4"></div>
+        <div class="spaces" id="5"></div>
+        <div class="spaces" id="6"></div>
+        <div class="spaces" id="7"></div>
+        <div class="spaces" id="8"></div>
+        <div class="spaces" id="9"></div>
+    </div>
+
+    <div class="form-popup" id="popup">
+        <form id="newPlayerForm" class="form-container">
+        <input type="text" id="playerName" name="playerName" placeholder="Insert new player here..." class="input-field">
+        <br>
+        <input type="text" id="gameChar" class="input-field" placeholder="'X's or 'O's?">
+    </form>
+    <div class="button-align">
+        <button type="button" class="button-38" onclick="newPlayer()">Submit</button>
+        <!-- <button type="button" class="button-38 cancel" onclick="computer()">Close</button> -->
+    </div>
+</div>
+
+    <div class="footer">
+        <p>Copyright 2023 @ Tyler Wolfe <a href=""><img src="" alt=""></a></p>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
