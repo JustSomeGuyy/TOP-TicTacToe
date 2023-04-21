@@ -14,15 +14,8 @@
     </div>
 
     <div class="gameDisplay">
-        <button id="newPlayer">Add Player</button>
-        <div class="playerNames"><span id="playerOne"></span></div>
-        <div class="score" id="scoreDisplay"> 0 - 0 </div>
-        <div class="playerNames"><span id="playerTwo"></span></div>
-    </div>
-    
-    <div class="buttons">
-        <button id="playerOneMove">Player One</button>
-        <button id="playerTwoMove">Player Two</button>
+        <button id="newPlayer" onclick="openForm()">Add Player</button>
+        <div class="playerNames" id="playerNames"></div>
     </div>
 
     <div class="game" id="gameBoard">
@@ -38,16 +31,12 @@
     </div>
 
     <div class="form-popup" id="popup">
-        <form id="newPlayerForm" class="form-container">
-        <input type="text" id="playerName" name="playerName" placeholder="Insert new player here..." class="input-field">
-        <br>
-        <input type="text" id="gameChar" class="input-field" placeholder="'X's or 'O's?">
-    </form>
-    <div class="button-align">
-        <button type="button" class="button-38" onclick="newPlayer()">Submit</button>
-        <!-- <button type="button" class="button-38 cancel" onclick="computer()">Close</button> -->
+        <form id="playerForm" onsubmit="return false">
+            <label for="playerName"><b>Enter Player Name</b></label>
+            <input type="text" placeholder="Enter name" id="playerName" required>
+            <button type="submit" onclick="newPlayer()">Add Player</button>
+          </form>
     </div>
-</div>
 
     <div class="footer">
         <p>Copyright 2023 @ Tyler Wolfe <a href=""><img src="" alt=""></a></p>

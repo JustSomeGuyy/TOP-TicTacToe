@@ -1,0 +1,42 @@
+:root {
+    box-sizing: border-box;
+}
+
+
+
+.game {
+    max-width: 50dvw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    gap: .8rem;
+    background-color: aqua;
+}
+
+.spaces {
+    font-size: 8rem;
+    align-self: center;
+    justify-self: center;
+    height: 150px;
+    width: 200px;
+    outline: 1px solid;
+    /* background-color: blue; */
+}
+
+.form-popup{
+    display: none;
+}
+
+.X {
+    color: blue;
+    text-align: center;
+}
+    
+.O {
+    color: red;
+    text-align: center;
+}
+
+.win {
+    background-color: yellow;
+}
