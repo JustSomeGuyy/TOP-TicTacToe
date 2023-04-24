@@ -13,8 +13,20 @@
         <h1 class="logo">Tic Tac Toe</h1>
     </div>
 
+    <div class="buttons">
+        <button class="button-12" id="newPlayer" onclick="openForm()">Add Player</button>
+        <button class="button-12" id="reset">Reset Game</button>
+    </div>
+
+    <div class="form-popup" id="popup">
+        <form id="playerForm" onsubmit="return false">
+            <label for="playerName">Enter Player Name</label>
+            <input type="text" placeholder="Enter name" id="playerName" required>
+            <button class="button-12" type="submit" onclick="newPlayer()">Add Player</button>
+          </form>
+    </div>
+
     <div class="gameDisplay">
-        <button id="newPlayer" onclick="openForm()">Add Player</button>
         <div class="playerNames" id="playerNames"></div>
     </div>
 
@@ -30,16 +42,8 @@
         <div class="spaces" id="9"></div>
     </div>
 
-    <div class="form-popup" id="popup">
-        <form id="playerForm" onsubmit="return false">
-            <label for="playerName"><b>Enter Player Name</b></label>
-            <input type="text" placeholder="Enter name" id="playerName" required>
-            <button type="submit" onclick="newPlayer()">Add Player</button>
-          </form>
-    </div>
-
     <div class="footer">
-        <p>Copyright 2023 @ Tyler Wolfe <a href=""><img src="" alt=""></a></p>
+        <p>Copyright 2023 @ Tyler Wolfe <a href="https://github.com/JustSomeGuyy"><img src="" alt=""></a></p>
     </div>
 
     <script src="main.js"></script>
