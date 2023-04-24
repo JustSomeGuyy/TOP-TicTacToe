@@ -3,10 +3,12 @@ const form = document.querySelector('.form-popup');
 
 function openForm() {
   document.getElementById("popup").style.display = "block";
+  document.querySelector('.overlay').style.display = 'block';
 }
 
 function closeForm() {
   document.getElementById("popup").style.display = "none";
+  document.querySelector('.overlay').style.display = 'none';
 }
 
 // Creates A New Player
